@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khadim ul Haram | Hajj & Umrah Services</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#071739', // Navy Blue
+                        secondary: '#f7c66e', // Gold
+                        accent: '#ffffff', // White
+                    },
+                    fontFamily: {
+                        heading: ['Amiri', 'serif'],
+                        body: ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #065f46;
+            border-radius: 5px;
+        }
+        
+        /* Hero Pattern Overlay */
+        .hero-overlay {
+            background: linear-gradient(rgba(142, 131, 184, 0.7), rgba(83, 62, 133, 0.8));
+        }
+
+        .tab-active {
+            background-color: #065f46;
+            color: white;
+            border-color: #065f46;
+        }
+    </style>
+</head>
+<body class="font-body bg-blue-900 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-primary text-white border-b-4 border-secondary shadow-md fixed w-full z-50 transition-all duration-300" id="navbar" >
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center gap-2">
+                        <img src="assets/kslogo.jpg" alt="Khadim ul Haram" class="h-24 w-auto">
+                        <!-- <span class="font-heading text-2xl font-bold text-gray-800">KHADIM ul <span class="text-secondary">HARAM</span></span> -->
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#home" class="relative px-4 py-2 rounded-full transition duration-300 hover:bg-secondary hover:text-white">Home</a>
+                    <a href="#services" class="relative px-4 py-2 rounded-full transition duration-300 hover:bg-secondary hover:text-white">Services</a>
+                    <a href="#packages" class="relative px-4 py-2 rounded-full transition duration-300 hover:bg-secondary hover:text-white">Packages</a>
+                    <a href="#about" class="relative px-4 py-2 rounded-full transition duration-300 hover:bg-secondary hover:text-white">About Us</a>
+                    <a href="gallery.php" class="relative px-4 py-2 rounded-full transition duration-300 hover:bg-secondary hover:text-white">Gallery</a>
+                    <a href="#contact" class="bg-accent text-secondary px-5 py-2 rounded-full hover:bg-secondary transition shadow-lg hover:text-accent transform hover:-translate-y-0.5">Book Now</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-secondary hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-primary border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-secondary hover:text-primary hover:bg-white rounded-md">Home</a>
+                <a href="#services" class="block px-3 py-2 text-secondary hover:text-primary hover:bg-white rounded-md">Services</a>
+                <a href="#packages" class="block px-3 py-2 text-secondary hover:text-primary hover:bg-white rounded-md">Packages</a>
+                <a href="#about" class="block px-3 py-2 text-secondary hover:text-primary hover:bg-white rounded-md">About Us</a>
+                <a href="gallery.php" class="block px-3 py-2 text-secondary hover:text-primary hover:bg-white rounded-md">Gallery</a>
+                <a href="#contact" class="block px-3 py-2 text-secondary font-bold hover:bg-secondary hover:text-primary rounded-md">Book Now</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Floating WhatsApp & Phone Icons -->
+    <div class="fixed right-4 bottom-20 flex flex-col gap-4 z-50">
+        <!-- WhatsApp Icon -->
+        <a href="https://wa.me/919419716416" target="_blank" 
+            class="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition">
+                <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+
+        <!-- Mobile/Phone Icon -->
+        <a href="tel:+919149716416" 
+            class="bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition">
+                <i class="fas fa-phone-volume text-2xl"></i>
+        </a>
+
+        <!-- Customer Care Icon -->
+        <a href="tel:18008901320" 
+            class="bg-red-500 text-white p-4 rounded-full shadow-lg hover:bg-red-600 transition">
+                <i class="fa-solid fa-headset text-2xl"></i>
+        </a>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen min-h-[600px] flex items-center justify-center bg-cover bg-center bg-fixed" style="background-image: url('assets/kaaba.jpg');">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+            <span class="block text-secondary text-xl mb-4  font-medium tracking-widest uppercase animate-fade-in">Welcome to Khadim UL Haram</span>
+            <h1 class="font-heading text-5xl md:text-7xl font-bold mb-6 leading-tight">Journey to the House of ALLAH</h1>
+            <p class="text-lg md:text-xl mb-8 text-primary max-w-2xl mx-auto">Experience a spiritually uplifting Hajj & Umrah journey with complete peace of mind. We handle the logistics You focus on Ibadah.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#packages" class="bg-secondary text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-primary transition shadow-lg">View Packages</a>
+                <a href="#contact" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-secondary hover:text-white transition">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="assets/madina.jpg" alt="Madina Mosque" class="w-full h-full object-cover transform hover:scale-105 transition duration-700">
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h4 class="text-primary font-bold uppercase tracking-wide mb-2">About Khadim ul Haram</h4>
+                    <h2 class="font-heading text-4xl font-bold text-gray-900 mb-6">Your Trusted Partner in Spiritual Journeys</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        At Khadim ul Haram, we understand that Hajj and Umrah are not just trips, but the journey of a lifetime. We are dedicated to providing high-quality services to pilgrims, ensuring their comfort and well-being throughout their sacred journey.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check-circle text-primary"></i>
+                            <span class="text-gray-700">Authorized Hajj & Umrah Operators</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check-circle text-primary"></i>
+                            <span class="text-gray-700">Experienced Guides & Scholars</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check-circle text-primary"></i>
+                            <span class="text-gray-700">Comprehensive Travel Support</span>
+                        </li>
+                    </ul>
+                    <a href="#services" class="text-primary font-bold hover:text-secondary transition flex items-center gap-2">
+                        Learn More About Our Services <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities / Services -->
+    <section id="services" class="py-20 bg-primary">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl font-bold text-accent mb-4">Our Services</h2>
+                <p class="text-secondary text-xl max-w-4xl mx-auto">We take care of every detail so you can devote yourself completely to worship.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-secondary p-8 rounded-xl shadow-sm hover:shadow-lg transition text-center group">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition duration-300">
+                        <i class="fa-solid fa-user-tie text-2xl text-primary group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-xl mb-2">Personal Guidance</h3>
+                    <p class="text-sm text-gray-700">Guiding you personally, with care and clarity.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-secondary p-8 rounded-xl shadow-sm hover:shadow-lg transition text-center group">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition duration-300">
+                        <i class="fa-solid fa-briefcase text-2xl text-primary group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-xl mb-2">Umrah Kit</h3>
+                    <p class="text-sm text-gray-700">From Ahram to Zamzam — essentials in one kit.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-secondary p-8 rounded-xl shadow-sm hover:shadow-lg transition text-center group">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition duration-300">
+                        <i class="fa-solid fa-passport text-2xl text-primary group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-xl mb-2">Visa Processing</h3>
+                    <p class="text-sm text-gray-700">Hassle-free Umrah and Hajj visa assistance.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-secondary p-8 rounded-xl shadow-sm hover:shadow-lg transition text-center group">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition duration-300">
+                        <i class="fa-solid fa-plane-departure text-2xl text-primary group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-xl mb-2">Direct Flights</h3>
+                    <p class="text-sm text-gray-700">Confirmed bookings with reputable airlines.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-secondary p-8 rounded-xl shadow-sm hover:shadow-lg transition text-center group">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition duration-300">
+                        <i class="fa-solid fa-hotel text-2xl text-primary group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-xl mb-2">Accommodations</h3>
+                    <p class="text-sm text-gray-700">Accommodations close to Haramain Shareefain.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="bg-secondary p-8 rounded-xl shadow-sm hover:shadow-lg transition text-center group">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition duration-300">
+                        <i class="fa-solid fa-utensils text-2xl text-primary group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-xl mb-2">Food</h3>
+                    <p class="text-sm text-gray-700">From Srinagar to Makkah — food that feels like home.</p>
+                </div>
+                <!-- Service 7 -->
+                <div class="bg-secondary p-8 rounded-xl shadow-sm hover:shadow-lg transition text-center group">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition duration-300">
+                        <i class="fa-solid fa-shirt text-2xl text-primary group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-xl mb-2">Laundery Service</h3>
+                    <p class="text-sm text-gray-700">Laundry care for a worry‑free pilgrimage because purity begins with cleanliness.</p>
+                </div>
+                <!-- Service 8 -->
+                <div class="bg-secondary p-8 rounded-xl shadow-sm hover:shadow-lg transition text-center group">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition duration-300">
+                        <i class="fa-solid fa-bus text-2xl text-primary group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-xl mb-2">Transport</h3>
+                    <p class="text-sm text-gray-700">Air-conditioned luxury buses for Ziyarat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-secondary font-bold tracking-wide uppercase">Choose Your Journey</span>
+                <h2 class="font-heading text-4xl font-bold text-gray-900 mt-2">Our Travel Packages</h2>
+            </div>
+
+            <!-- Tabs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button onclick="filterPackages('all')" class="package-tab px-6 py-2 rounded-full bg-primary text-accent font-bold hover:bg-secondary hover:text-primary transition tab-active" data-tab="all">All Packages</button>
+                <button onclick="filterPackages('saver')" class="package-tab px-6 py-2 rounded-full bg-primary text-accent font-bold hover:bg-secondary hover:text-primary transition" data-tab="saver">Super Saver</button>
+                <button onclick="filterPackages('deluxe')" class="package-tab px-6 py-2 rounded-full bg-primary text-accent font-bold hover:bg-secondary hover:text-primary transition" data-tab="deluxe">Deluxe</button>
+                <button onclick="filterPackages('semi')" class="package-tab px-6 py-2 rounded-full bg-primary text-accent font-bold hover:bg-secondary hover:text-primary transition" data-tab="semi">Semi Deluxe</button>
+                
+            </div>
+
+            <!-- Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="packages-grid">
+                
+                <!-- Deluxe 1 -->
+                <div class="package-card deluxe bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="assets/D1.jpg" alt="Kaaba" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Deluxe</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">21 Days Deluxe</h3>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6 border-b pb-4">
+                            <li><i class="fa-solid fa-clock text-primary w-5"></i> 21 Days Duration</li>
+                            <li><i class="fa-solid fa-hotel text-primary w-5"></i> 5-Star Hotels near Haram</li>
+                            <li><i class="fa-solid fa-utensils text-primary w-5"></i> Full Board Meals</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Starting from</p>
+                                <p class="text-2xl font-bold text-primary">₹ 1,26,999</p>
+                            </div>
+                            <button onclick="openModal('21 Days Deluxe Package')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition ">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deluxe 2 -->
+                <div class="package-card deluxe bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="assets/D3.jpg" alt="Medina" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Deluxe</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">28 Days Deluxe</h3>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6 border-b pb-4">
+                            <li><i class="fa-solid fa-clock text-primary w-5"></i> 28 Days Duration</li>
+                            <li><i class="fa-solid fa-hotel text-primary w-5"></i> Premium Accommodation</li>
+                            <li><i class="fa-solid fa-bus text-primary w-5"></i> VIP Transport</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Starting from</p>
+                                <p class="text-2xl font-bold text-primary">₹ 1,54,999</p>
+                            </div>
+                            <button onclick="openModal('28 Days Deluxe Package')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deluxe 3 (Ramadhan) -->
+                <div class="package-card deluxe bg-gradient-to-br from-green-50 to-amber-50 border border-amber-100 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group relative">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-secondary"></div>
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="assets/D2.jpg" alt="Ramadhan" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Ramadhan Special</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">Deluxe Ramadhan</h3>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6 border-b border-amber-200 pb-4">
+                            <li><i class="fa-solid fa-moon text-secondary w-5"></i> Full Ramadhan Experience</li>
+                            <li><i class="fa-solid fa-utensils text-primary w-5"></i> Iftar & Suhoor Included</li>
+                            <li><i class="fa-solid fa-mosque text-primary w-5"></i> Last 10 Days in Makkah</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">All Inclusive</p>
+                                <p class="text-2xl font-bold text-primary">₹ 1,64,999</p>
+                            </div>
+                            <button onclick="openModal('Deluxe Ramadhan Package')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semi Deluxe 1 -->
+                <div class="package-card semi bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+                     <div class="relative h-56 overflow-hidden">
+                        <img src="assets/SD1.jpg" alt="Umrah" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Semi Deluxe</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">15 Days Classic</h3>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6 border-b pb-4">
+                            <li><i class="fa-solid fa-clock text-primary w-5"></i> 15 Days Duration</li>
+                            <li><i class="fa-solid fa-hotel text-primary w-5"></i> 4-Star Accommodations</li>
+                            <li><i class="fa-solid fa-bus text-primary w-5"></i> Group Transport</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Best Value</p>
+                                <p class="text-2xl font-bold text-primary">₹ 1,14,999</p>
+                            </div>
+                            <button onclick="openModal('15 Days Semi Deluxe')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semi Deluxe 2 -->
+                <div class="package-card semi bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+                     <div class="relative h-56 overflow-hidden">
+                        <img src="assets/SD2.jpg" alt="Makkah" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Semi Deluxe</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">20 Days Extended</h3>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6 border-b pb-4">
+                            <li><i class="fa-solid fa-clock text-primary w-5"></i> 20 Days Duration</li>
+                            <li><i class="fa-solid fa-map-marker-alt text-primary w-5"></i> Walkable Distance</li>
+                            <li><i class="fa-solid fa-utensils text-primary w-5"></i> Buffet Meals</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Popular Choice</p>
+                                <p class="text-2xl font-bold text-primary">₹ 1,23,999</p>
+                            </div>
+                            <button onclick="openModal('20 Days Semi Deluxe')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semi Deluxe Ramadhan -->
+                 <div class="package-card semi bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+                     <div class="relative h-56 overflow-hidden">
+                        <img src="assets/SD3.jpg" alt="Lantern" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Ramadhan</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">Semi Deluxe Ramadhan</h3>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6 border-b pb-4">
+                            <li><i class="fa-solid fa-moon text-secondary w-5"></i> Spiritual Experience</li>
+                            <li><i class="fa-solid fa-hotel text-primary w-5"></i> Comfortable Stay</li>
+                            <li><i class="fa-solid fa-bus text-primary w-5"></i> Guided Ziyarat</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Seasonal</p>
+                                <p class="text-2xl font-bold text-primary">₹ 1,44,999</p>
+                            </div>
+                            <button onclick="openModal('Semi Deluxe Ramadhan')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Super Saver 1 -->
+                <div class="package-card saver bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+                     <div class="relative h-56 overflow-hidden">
+                        <img src="assets/SS1.jpg" alt="Desert" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Super Saver</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">12 Days Economy</h3>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6 border-b pb-4">
+                            <li><i class="fa-solid fa-clock text-primary w-5"></i> 12 Days Duration</li>
+                            <li><i class="fa-solid fa-shuttle-van text-primary w-5"></i> Free Shuttle to Haram</li>
+                            <li><i class="fa-solid fa-file-invoice-dollar text-primary w-5"></i> Budget Friendly</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Unbeatable Price</p>
+                                <p class="text-2xl font-bold text-primary">₹ 99,999</p>
+                            </div>
+                            <button onclick="openModal('12 Days Super Saver')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Super Saver 2 -->
+                <div class="package-card saver bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group">
+                     <div class="relative h-56 overflow-hidden">
+                        <img src="assets/SS2.jpg" alt="Arch" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Super Saver</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">15 Days Saver</h3>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-6 border-b pb-4">
+                            <li><i class="fa-solid fa-clock text-primary w-5"></i> 15 Days Duration</li>
+                            <li><i class="fa-solid fa-building text-primary w-5"></i> Standard Hotels</li>
+                            <li><i class="fa-solid fa-users text-primary w-5"></i> Group Activities</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Economy Plus</p>
+                                <p class="text-2xl font-bold text-primary">₹ 1,04,999</p>
+                            </div>
+                            <button onclick="openModal('15 Days Super Saver')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Hotels -->
+    <section class="py-12 bg-primary">
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading text-4xl font-bold text-secondary text-center mb-8">Our Partnered Hotels</h2>
+    
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+                <!-- Hotel 1 -->
+                <div class="text-center">
+                    <img src="assets/hotel1.jpg" alt="Hotel Al Deyafa" class="rounded-lg shadow-md w-full h-48 object-cover border-4 border-white">
+                    <h3 class="mt-4 text-lg font-semibold text-secondary">Al Deyafa Group</h3>
+                </div>
+      
+                <!-- Hotel 2 -->
+                <div class="text-center">
+                    <img src="assets/hotel2.jpg" alt="Hotel Al Olayan" class="rounded-lg shadow-md w-full h-48 object-cover border-4 border-white">
+                    <h3 class="mt-4 text-lg font-semibold text-secondary">Al Olayan Group</h3>
+                </div>
+      
+                <!-- Hotel 3 -->
+                <div class="text-center">
+                    <img src="assets/hotel3.jpg" alt="Hotel Araek" class="rounded-lg shadow-md w-full h-48 object-cover border-4 border-white">
+                    <h3 class="mt-4 text-lg font-semibold text-secondary">Araek Group</h3>
+                </div>
+      
+                <!-- Add more hotels as needed -->
+      
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('https://www.transparenttextures.com/patterns/arabesque.png');"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="font-heading text-4xl font-bold text-center mb-16 text-primary">What Our Pilgrims Say</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-primary backdrop-blur-md p-8 rounded-xl border border-white/20">
+                    <div class="text-secondary text-2xl mb-4"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="mb-6 italic">"Alhamdulillah, the best service I have experienced. The hotels were very close to the Haram, and the guides were extremely knowledgeable."</p>
+                    <div class="font-bold text-secondary">- Mohammed Rizwan</div>
+                    <div class="text-sm opacity-75">Srinagar</div>
+                </div>
+                <div class="bg-primary backdrop-blur-md p-8 rounded-xl border border-white/20">
+                    <div class="text-secondary text-2xl mb-4"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="mb-6 italic">"The Ramadhan package was perfectly managed. Despite the crowd, Khadim ul Haram ensured our transport and food were on time. Highly recommended."</p>
+                    <div class="font-bold text-secondary">- Fatima Begum</div>
+                    <div class="text-sm opacity-75">Baramulla</div>
+                </div>
+                <div class="bg-primary backdrop-blur-md p-8 rounded-xl border border-white/20">
+                    <div class="text-secondary text-2xl mb-4"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="mb-6 italic">"Booking with them for my parents was a great decision. The staff took personal care of the elderly in the group. JazakAllah Khair."</p>
+                    <div class="font-bold text-secondary">- Ahmed Sheikh</div>
+                    <div class="text-sm opacity-75">Anantnag</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-primary">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-12">
+                
+                <!-- Contact Info -->
+                <div class="md:w-1/3 space-y-8">
+                    <div>
+                        <h2 class="font-heading text-4xl font-bold text-secondary mb-4">Contact Us</h2>
+                        <p class="text-white">Ready to start your spiritual journey? Get in touch with us or visit our office.</p>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center flex-shrink-0 text-primary">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-secondary">Our Office</h4>
+                                <p class="text-gray-500">2nd AL-Mohammadiya Complex, Opposite District Hospital, Ganderbal Kashmir 191201</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center flex-shrink-0 text-primary">
+                                <i class="fa-solid fa-phone text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-secondary">Phone</h4>
+                                <p class="text-gray-500">+91 91497 16416<br>+91 12345 67890</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center flex-shrink-0 text-primary">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-secondary">Email</h4>
+                                <p class="text-gray-500">info@khidmatisafar.com<br>bookings@khidmatisafar.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div class="md:w-2/3 bg-secondary p-8 rounded-2xl shadow-lg border-4 border-white">
+                    <h3 class="font-bold text-2xl mb-6">Send us an Inquiry</h3>
+                    <form onsubmit="handleFormSubmit(event, 'contact-form')">
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-gray-700 font-bold mb-2">Full Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-lg border focus:border-primary focus:ring-2 focus:ring-green-200 outline-none transition" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-bold mb-2">Phone Number</label>
+                                <input type="tel" class="w-full px-4 py-3 rounded-lg border focus:border-primary focus:ring-2 focus:ring-green-200 outline-none transition" placeholder="+91 XXXXX XXXXX" required>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-bold mb-2">Interested Package</label>
+                            <select class="w-full px-4 py-3 rounded-lg border focus:border-primary focus:ring-2 focus:ring-green-200 outline-none transition">
+                                <option>Select a package</option>
+                                <option>21 Days Deluxe (Rs 1,26,999)</option>
+                                <option>28 Days Deluxe (Rs 1,54,999)</option>
+                                <option>Ramadhan Deluxe (Rs 1,64,999)</option>
+                                <option>15 Days Semi (Rs 1,14,999)</option>
+                                <option>20 Days Semi (Rs 1,23,999)</option>
+                                <option>Ramadhan Semi (Rs 1,44,999)</option>
+                                <option>12 Days Saver (Rs 99,999)</option>
+                                <option>15 Days Saver (Rs 1,04,999)</option>
+                                <option>Custom Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-bold mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg border focus:border-primary focus:ring-2 focus:ring-green-200 outline-none transition" placeholder="Any specific requirements or questions?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white font-bold py-4 rounded-lg hover:bg-white hover:text-primary transition shadow-lg">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12 border-t-4 border-secondary">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="assets/kslogo.jpg" alt="Khidmat ul Haram Logo" class="h-16 w-auto">
+                        <!-- <span class="font-heading text-l font-bold">Khadim ul <span class="text-secondary">Haram</span></span> -->
+                    </div>
+                    <p class="text-white text-sm">Serving the Guests of Allah with dignity, comfort, and trust.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-secondary">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition">Back to Top</a></li>
+                        <li><a href="#packages" class="hover:text-white transition">Packages</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Services</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-secondary">Legal</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-secondary">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61572489695459" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/khadim_ul_haram?igsh=MTQxYm41cjhkbGthOQ==" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary  transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Khadim ul Haram Travel Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 z-[100] hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity" onclick="closeModal()"></div>
+
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
+                            <i class="fa-solid fa-calendar-check text-primary"></i>
+                        </div>
+                        <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full">
+                            <h3 class="text-xl font-semibold leading-6 text-gray-900" id="modal-title">Book Package</h3>
+                            <div class="mt-4">
+                                <form id="modalForm" onsubmit="handleFormSubmit(event, 'modal')">
+                                    <div class="mb-4">
+                                        <label class="block text-gray-700 text-sm font-bold mb-2">Selected Package</label>
+                                        <input type="text" id="modalPackageInput" class="w-full px-3 py-2 bg-gray-100 border rounded-lg text-gray-500" readonly>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
+                                        <input type="text" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="block text-gray-700 text-sm font-bold mb-2">Phone Number</label>
+                                        <input type="tel" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                                    </div>
+                                    <div class="mt-6 flex flex-row-reverse gap-2">
+                                        <button type="submit" class="inline-flex w-full justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-800 sm:ml-3 sm:w-auto">Confirm Booking</button>
+                                        <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" onclick="closeModal()">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter Packages Function
+        function filterPackages(category) {
+            const cards = document.querySelectorAll('.package-card');
+            const buttons = document.querySelectorAll('.package-tab');
+            
+            // Update Active Button Style
+            buttons.forEach(btn => {
+                if (btn.dataset.tab === category) {
+                    btn.classList.add('tab-active');
+                    btn.classList.remove('text-primary', 'bg-transparent');
+                    btn.classList.add('text-white', 'bg-primary');
+                } else {
+                    btn.classList.remove('tab-active', 'bg-primary', 'text-white');
+                    btn.classList.add('text-primary', 'bg-transparent');
+                }
+            });
+
+            // Filter Logic
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                    // Add fade animation
+                    card.classList.add('animate-fade-in');
+                } else {
+                    if (card.classList.contains(category)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // Modal Logic
+        const modal = document.getElementById('bookingModal');
+        const modalInput = document.getElementById('modalPackageInput');
+
+        function openModal(packageName) {
+            modalInput.value = packageName;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Form Handling (Simulation)
+        function handleFormSubmit(e, type) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const originalText = btn.innerText;
+            
+            btn.innerText = 'Sending...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert("JazakAllah Khair! Your inquiry has been received. Our team will contact you shortly.");
+                e.target.reset();
+                btn.innerText = originalText;
+                btn.disabled = false;
+                if(type === 'modal') closeModal();
+            }, 1500);
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-0');
+                nav.classList.remove('py-2');
+            } else {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-0');
+            }
+        });
+    </script>
+</body>
+</html>
