@@ -144,9 +144,9 @@ if (is_dir($dir)) {
             <!-- Controls -->
             <div class="flex flex-col md:flex-row justify-between items-center mb-10 gap-4">
                 <div class="flex gap-2">
-                    <button class="filter-btn active px-4 py-2 rounded-full bg-secondary text-primary text-sm font-bold shadow-md hover:text-white hover:bg-primary transition" data-filter="all">All</button>
-                    <button class="filter-btn px-4 py-2 rounded-full bg-secondary text-primary text-sm font-bold shadow-sm hover:text-white hover:bg-primary transition" data-filter="video">Videos</button>
-                    <button class="filter-btn px-4 py-2 rounded-full bg-secondary text-primary text-sm font-bold shadow-sm hover:text-white hover:bg-primary transition" data-filter="image">Photos</button>
+                    <button class="filter-btn active px-4 py-2 rounded-full bg-primary text-white text-sm font-bold shadow-md hover:text-white hover:bg-primary transition" data-filter="all">All</button>
+                    <button class="filter-btn px-4 py-2 rounded-full bg-primary text-white text-sm font-bold shadow-sm hover:text-white hover:bg-primary transition" data-filter="video">Videos</button>
+                    <button class="filter-btn px-4 py-2 rounded-full bg-primary text-white text-sm font-bold shadow-sm hover:text-white hover:bg-primary transition" data-filter="image">Photos</button>
                 </div>
                 
                 <div class="flex items-center gap-2">
@@ -204,9 +204,9 @@ if (is_dir($dir)) {
                 // Update visual state
                 filterBtns.forEach(b => {
                     b.classList.remove('bg-primary', 'text-white');
-                    b.classList.add('bg-white', 'text-gray-600');
+                    b.classList.add('bg-secondary', 'text-primary');
                 });
-                e.target.classList.remove('bg-white', 'text-gray-600');
+                e.target.classList.remove('bg-secondary', 'text-primary');
                 e.target.classList.add('bg-primary', 'text-white');
                 
                 // Filter logic

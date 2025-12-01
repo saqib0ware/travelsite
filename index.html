@@ -268,10 +268,10 @@
 
             <!-- Tabs -->
             <div class="flex flex-wrap justify-center gap-4 mb-12">
-                <button onclick="filterPackages('all')" class="package-tab px-6 py-2 rounded-full bg-primary text-accent font-bold hover:bg-secondary hover:text-primary transition tab-active" data-tab="all">All Packages</button>
-                <button onclick="filterPackages('saver')" class="package-tab px-6 py-2 rounded-full bg-primary text-accent font-bold hover:bg-secondary hover:text-primary transition" data-tab="saver">Super Saver</button>
-                <button onclick="filterPackages('deluxe')" class="package-tab px-6 py-2 rounded-full bg-primary text-accent font-bold hover:bg-secondary hover:text-primary transition" data-tab="deluxe">Deluxe</button>
-                <button onclick="filterPackages('semi')" class="package-tab px-6 py-2 rounded-full bg-primary text-accent font-bold hover:bg-secondary hover:text-primary transition" data-tab="semi">Semi Deluxe</button>
+                <button onclick="filterPackages('all')" class="package-tab px-6 py-2 rounded-full bg-primary text-white font-bold hover:bg-primary hover:text-white transition tab-active" data-tab="all">All Packages</button>
+                <button onclick="filterPackages('saver')" class="package-tab px-6 py-2 rounded-full bg-primary text-white font-bold hover:bg-primary hover:text-white transition" data-tab="saver">Super Saver</button>
+                <button onclick="filterPackages('deluxe')" class="package-tab px-6 py-2 rounded-full bg-primary text-white font-bold hover:bg-primary hover:text-white transition" data-tab="deluxe">Deluxe</button>
+                <button onclick="filterPackages('semi')" class="package-tab px-6 py-2 rounded-full bg-primary text-white font-bold hover:bg-primary hover:text-white transition" data-tab="semi">Semi Deluxe</button>
                 
             </div>
 
@@ -713,11 +713,11 @@
             buttons.forEach(btn => {
                 if (btn.dataset.tab === category) {
                     btn.classList.add('tab-active');
-                    btn.classList.remove('text-primary', 'bg-transparent');
+                    btn.classList.remove('text-primary', 'bg-secondary');
                     btn.classList.add('text-white', 'bg-primary');
                 } else {
                     btn.classList.remove('tab-active', 'bg-primary', 'text-white');
-                    btn.classList.add('text-primary', 'bg-transparent');
+                    btn.classList.add('text-primary', 'bg-secondary');
                 }
             });
 
