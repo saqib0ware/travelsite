@@ -699,9 +699,16 @@
         // Mobile Menu Toggle
         const mobileBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = mobileMenu.querySelectorAll('a');
         
         mobileBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+        // Close menu when any nav link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
         });
 
         // Filter Packages Function
