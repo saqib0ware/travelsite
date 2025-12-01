@@ -58,7 +58,7 @@
         }
     </style>
 </head>
-<body class="font-body bg-blue-900 text-gray-800">
+<body class="font-body bg-blue-900 text-primary">
 
     <!-- Navigation -->
     <nav class="bg-primary text-white border-b-4 border-secondary shadow-md fixed w-full z-50 transition-all duration-300" id="navbar" >
@@ -296,7 +296,7 @@
                                 <p class="text-xs text-gray-500">Starting from</p>
                                 <p class="text-2xl font-bold text-primary">₹ 1,26,999</p>
                             </div>
-                            <button onclick="openModal('21 Days Deluxe Package')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition ">Book Now</button>
+                            <button onclick="window.location.href='packages.html#deluxe'" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition ">Details</button>
                         </div>
                     </div>
                 </div>
@@ -319,7 +319,7 @@
                                 <p class="text-xs text-gray-500">Starting from</p>
                                 <p class="text-2xl font-bold text-primary">₹ 1,54,999</p>
                             </div>
-                            <button onclick="openModal('28 Days Deluxe Package')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Book Now</button>
+                            <button onclick="window.location.href='packages.html#deluxe'" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Details</button>
                         </div>
                     </div>
                 </div>
@@ -343,7 +343,7 @@
                                 <p class="text-xs text-gray-500">All Inclusive</p>
                                 <p class="text-2xl font-bold text-primary">₹ 1,64,999</p>
                             </div>
-                            <button onclick="openModal('Deluxe Ramadhan Package')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Book Now</button>
+                            <button onclick="window.location.href='packages.html#deluxe'" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Details</button>
                         </div>
                     </div>
                 </div>
@@ -366,7 +366,7 @@
                                 <p class="text-xs text-gray-500">Best Value</p>
                                 <p class="text-2xl font-bold text-primary">₹ 1,14,999</p>
                             </div>
-                            <button onclick="openModal('15 Days Semi Deluxe')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Book Now</button>
+                            <button onclick="window.location.href='packages.html#semi'" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Details</button>
                         </div>
                     </div>
                 </div>
@@ -389,7 +389,7 @@
                                 <p class="text-xs text-gray-500">Popular Choice</p>
                                 <p class="text-2xl font-bold text-primary">₹ 1,23,999</p>
                             </div>
-                            <button onclick="openModal('20 Days Semi Deluxe')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Book Now</button>
+                            <button onclick="window.location.href='packages.html#semi'" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Details</button>
                         </div>
                     </div>
                 </div>
@@ -412,7 +412,7 @@
                                 <p class="text-xs text-gray-500">Seasonal</p>
                                 <p class="text-2xl font-bold text-primary">₹ 1,44,999</p>
                             </div>
-                            <button onclick="openModal('Semi Deluxe Ramadhan')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Book Now</button>
+                            <button onclick="window.location.href='packages.html#semi'" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Details</button>
                         </div>
                     </div>
                 </div>
@@ -435,7 +435,7 @@
                                 <p class="text-xs text-gray-500">Unbeatable Price</p>
                                 <p class="text-2xl font-bold text-primary">₹ 99,999</p>
                             </div>
-                            <button onclick="openModal('12 Days Super Saver')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Book Now</button>
+                            <button onclick="window.location.href='packages.html#saver'" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Details</button>
                         </div>
                     </div>
                 </div>
@@ -458,7 +458,7 @@
                                 <p class="text-xs text-gray-500">Economy Plus</p>
                                 <p class="text-2xl font-bold text-primary">₹ 1,04,999</p>
                             </div>
-                            <button onclick="openModal('15 Days Super Saver')" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Book Now</button>
+                            <button onclick="window.location.href='packages.html#saver'" class="bg-primary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary hover:text-primary transition">Details</button>
                         </div>
                     </div>
                 </div>
@@ -654,47 +654,6 @@
         </div>
     </footer>
 
-    <!-- Booking Modal -->
-    <div id="bookingModal" class="fixed inset-0 z-[100] hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-        <!-- Backdrop -->
-        <div class="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity" onclick="closeModal()"></div>
-
-        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-                    <div class="sm:flex sm:items-start">
-                        <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
-                            <i class="fa-solid fa-calendar-check text-primary"></i>
-                        </div>
-                        <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full">
-                            <h3 class="text-xl font-semibold leading-6 text-gray-900" id="modal-title">Book Package</h3>
-                            <div class="mt-4">
-                                <form id="modalForm" onsubmit="handleFormSubmit(event, 'modal')">
-                                    <div class="mb-4">
-                                        <label class="block text-gray-700 text-sm font-bold mb-2">Selected Package</label>
-                                        <input type="text" id="modalPackageInput" class="w-full px-3 py-2 bg-gray-100 border rounded-lg text-gray-500" readonly>
-                                    </div>
-                                    <div class="mb-4">
-                                        <label class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
-                                        <input type="text" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
-                                    </div>
-                                    <div class="mb-4">
-                                        <label class="block text-gray-700 text-sm font-bold mb-2">Phone Number</label>
-                                        <input type="tel" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
-                                    </div>
-                                    <div class="mt-6 flex flex-row-reverse gap-2">
-                                        <button type="submit" class="inline-flex w-full justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-800 sm:ml-3 sm:w-auto">Confirm Booking</button>
-                                        <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" onclick="closeModal()">Cancel</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script>
         // Mobile Menu Toggle
         const mobileBtn = document.getElementById('mobile-menu-btn');
@@ -742,39 +701,6 @@
                     }
                 }
             });
-        }
-
-        // Modal Logic
-        const modal = document.getElementById('bookingModal');
-        const modalInput = document.getElementById('modalPackageInput');
-
-        function openModal(packageName) {
-            modalInput.value = packageName;
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
-        }
-
-        function closeModal() {
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
-        // Form Handling (Simulation)
-        function handleFormSubmit(e, type) {
-            e.preventDefault();
-            const btn = e.target.querySelector('button[type="submit"]');
-            const originalText = btn.innerText;
-            
-            btn.innerText = 'Sending...';
-            btn.disabled = true;
-
-            setTimeout(() => {
-                alert("JazakAllah Khair! Your inquiry has been received. Our team will contact you shortly.");
-                e.target.reset();
-                btn.innerText = originalText;
-                btn.disabled = false;
-                if(type === 'modal') closeModal();
-            }, 1500);
         }
 
         // Navbar scroll effect

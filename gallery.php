@@ -82,7 +82,7 @@ if (is_dir($dir)) {
         }
     </script>
 </head>
-<body class="font-body bg-white text-gray-800">
+<body class="font-body bg-white text-primary">
 
     <!-- Navigation -->
      <nav class="bg-primary text-white border-b-4 border-secondary shadow-md fixed w-full z-50 transition-all duration-300" id="navbar" >
