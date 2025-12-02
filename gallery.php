@@ -102,7 +102,7 @@ if (is_dir($dir)) {
                     <a href="index.html#packages" class="relative px-4 py-2 rounded-full transition duration-300 hover:bg-secondary hover:text-white">Packages</a>
                     <a href="index.html#about" class="relative px-4 py-2 rounded-full transition duration-300 hover:bg-secondary hover:text-white">About Us</a>
                     <a href="gallery.php" class="relative px-4 py-2 rounded-full transition duration-300 hover:bg-secondary hover:text-white">Gallery</a>
-                    <a href="index.html#contact" class="bg-accent text-secondary px-5 py-2 rounded-full hover:bg-secondary transition shadow-lg hover:text-accent transform hover:-translate-y-0.5">Book Now</a>
+                    <a href="index.html#contact" class="bg-white text-primary px-5 py-2 rounded-full hover:bg-secondary transition shadow-lg hover:text-white transform hover:-translate-y-0.5">Book Now</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -122,7 +122,7 @@ if (is_dir($dir)) {
                 <a href="index.html#packages" class="block px-3 py-2 text-secondary hover:text-primary hover:bg-white rounded-md">Packages</a>
                 <a href="index.html#about" class="block px-3 py-2 text-secondary hover:text-primary hover:bg-white rounded-md">About Us</a>
                 <a href="gallery.php" class="block px-3 py-2 text-secondary hover:text-primary hover:bg-white rounded-md">Gallery</a>
-                <a href="index.html#contact" class="block px-3 py-2 text-secondary font-bold hover:text-primary hover:bg-secondary rounded-md">Book Now</a>
+                <a href="index.html#contact" class="block px-3 py-2 bg-white text-primary font-bold hover:text-primary hover:bg-secondary rounded-md">Book Now</a>
             </div>
         </div>
     </nav>
