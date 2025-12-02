@@ -133,93 +133,63 @@
         <div class="container mx-auto px-4">
             <div class="flex items-center gap-4 mb-8">
                 <div class="h-px bg-gold flex-grow"></div>
-                <h2 class="font-heading text-3xl font-bold text-gray-800"><i class="fa-solid fa-crown text-gold mr-3"></i>Deluxe Packages</h2>
+                <h2 class="font-heading text-3xl font-bold text-Primary"><i class="fa-solid fa-crown text-gold mr-3"></i>Deluxe Packages</h2>
                 <div class="h-px bg-gold flex-grow"></div>
             </div>
 
-            <div class="space-y-8">
+            <div class="grid md:grid-cols-3 gap-8">
                 <!-- Deluxe 21 Days -->
-                <div class="bg-white rounded-2xl shadow-lg border-l-8 border-gold overflow-hidden">
-                    <div class="grid md:grid-cols-3">
-                        <div class="p-8 bg-gray-50 flex flex-col justify-center border-r border-gray-100">
-                            <h3 class="font-heading text-2xl font-bold text-gray-800">21 Days Deluxe</h3>
-                            <p class="text-gold font-bold text-3xl mt-2">₹ 1,26,999</p>
-                            <p class="text-sm text-gray-500 mt-1">Per person on twin sharing</p>
-                            <button onclick="openModal()" class="mt-6 bg-gold text-white px-6 py-3 rounded-lg hover:bg-yellow-700 transition font-bold w-full">Book Now</button>
-                        </div>
-                        <div class="p-8 md:col-span-2">
-                            <h4 class="font-bold text-lg mb-4 text-primary">Package Highlights</h4>
-                            <div class="grid sm:grid-cols-2 gap-4 mb-6">
-                                <ul class="space-y-2 text-sm text-gray-600">
-                                    <li><i class="fa-solid fa-hotel w-6 text-gold"></i> <strong>Makkah:</strong> Swissotel / similar (0m)</li>
-                                    <li><i class="fa-solid fa-hotel w-6 text-gold"></i> <strong>Madina:</strong> Anwar Al Madina (50m)</li>
-                                    <li><i class="fa-solid fa-plane w-6 text-gold"></i> <strong>Flight:</strong> Direct Saudi Airlines</li>
-                                </ul>
-                                <ul class="space-y-2 text-sm text-gray-600">
-                                    <li><i class="fa-solid fa-utensils w-6 text-gold"></i> <strong>Food:</strong> Full Board (Buffet)</li>
-                                    <li><i class="fa-solid fa-bus w-6 text-gold"></i> <strong>Transport:</strong> Luxury Private Bus</li>
-                                    <li><i class="fa-solid fa-shirt w-6 text-gold"></i> <strong>Laundry:</strong> Included (Unlimited)</li>
-                                </ul>
-                            </div>
-                            <div class="bg-yellow-50 p-4 rounded-lg">
-                                <h5 class="font-bold text-sm mb-2 text-yellow-800">Brief Itinerary</h5>
-                                <p class="text-sm text-gray-700">Day 1-10: Stay in Makkah with guided Umrah. Day 11: Ziyarat Makkah. Day 12: Travel to Madina via Haramain Train. Day 13-20: Stay in Madina. Day 21: Departure.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="bg-white rounded-xl shadow-lg border-l-8 border border-gold p-6">
+                    <h3 class="font-heading text-3xl font-bold text-center text-gray-800">21 Days Deluxe</h3><br>
+                    <p class="text-gray-600 text-sm">Starts From: <span class="font-bold text-xl text-gold">₹ 1,26,999</span></p>
+                    <p class="text-gray-600 text-sm">For 3 Sharing: <span class="font-bold text-xl text-gold">₹ 1,55,999</span></p>
+                    <p class="text-gray-600 text-sm">For 2 Sharing: <span class="font-bold text-xl text-gold">₹ 1,67,999</span></p>
+                    <br>
+                    <h4 class="font-bold text-lg mb-4 text-primary">Package Highlights</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fa-solid fa-hotel w-6 text-gold"></i> <strong>Makkah:</strong> Swissotel / similar (0m)</li>
+                        <li><i class="fa-solid fa-hotel w-6 text-gold"></i> <strong>Madina:</strong> Anwar Al Madina (50m)</li>
+                        <li><i class="fa-solid fa-plane w-6 text-gold"></i> <strong>Flight:</strong> Direct Saudi Airlines</li>
+                        <li><i class="fa-solid fa-utensils w-6 text-gold"></i> <strong>Food:</strong> Full Board (Buffet)</li>
+                        <li><i class="fa-solid fa-bus w-6 text-gold"></i> <strong>Transport:</strong> Luxury Private Bus</li>
+                        <li><i class="fa-solid fa-shirt w-6 text-gold"></i> <strong>Laundry:</strong> Included (Unlimited)</li>
+                    </ul>
+                    <button onclick="openModal()" class="mt-6 bg-gold text-white px-6 py-3 rounded-lg hover:bg-primary transition font-bold w-full">Book Now</button>
                 </div>
 
                 <!-- Deluxe 28 Days -->
-                <div class="bg-white rounded-2xl shadow-lg border-l-8 border-gold overflow-hidden">
-                    <div class="grid md:grid-cols-3">
-                        <div class="p-8 bg-gray-50 flex flex-col justify-center border-r border-gray-100">
-                            <h3 class="font-heading text-2xl font-bold text-gray-800">28 Days Deluxe</h3>
-                            <p class="text-gold font-bold text-3xl mt-2">₹ 1,54,999</p>
-                            <p class="text-sm text-gray-500 mt-1">Per person on twin sharing</p>
-                            <button onclick="openModal()" class="mt-6 bg-gold text-white px-6 py-3 rounded-lg hover:bg-yellow-700 transition font-bold w-full">Book Now</button>
-                        </div>
-                        <div class="p-8 md:col-span-2">
-                            <h4 class="font-bold text-lg mb-4 text-primary">Package Highlights</h4>
-                            <p class="text-gray-600 mb-4 text-sm">An extended stay allowing for 4 Jumu'ah prayers in the Holy Mosques. Ideal for those who want to spend more time in Ibadah without rushing.</p>
-                            <div class="grid sm:grid-cols-2 gap-4">
-                                <ul class="space-y-2 text-sm text-gray-600">
-                                    <li><i class="fa-solid fa-calendar-check w-6 text-gold"></i> <strong>Duration:</strong> 14 Days Makkah / 14 Days Madina</li>
-                                    <li><i class="fa-solid fa-bag-shopping w-6 text-gold"></i> <strong>Ziyarat:</strong> Exclusive Historical Sites included</li>
-                                </ul>
-                                <ul class="space-y-2 text-sm text-gray-600">
-                                    <li><i class="fa-solid fa-kit-medical w-6 text-gold"></i> <strong>Insurance:</strong> Full Travel Insurance</li>
-                                    <li><i class="fa-solid fa-bottle-water w-6 text-gold"></i> <strong>Gifts:</strong> 5L Zamzam + Luggage Bag</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="bg-white rounded-xl shadow-lg border-l-8 border border-gold p-6">
+                    <h3 class="font-heading text-3xl font-bold text-center text-gray-800">28 Days Deluxe</h3><br>
+                    <p class="text-gray-600 text-sm">Starts From: <span class="font-bold text-xl text-gold">₹ 1,74,999</span></p>
+                    <br>
+                    <h4 class="font-bold text-lg mb-4 text-primary">Package Highlights</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fa-solid fa-calendar-check w-6 text-gold"></i> <strong>Duration:</strong> 14 Days Makkah / 14 Days Madina</li>
+                        <li><i class="fa-solid fa-bag-shopping w-6 text-gold"></i> <strong>Ziyarat:</strong> Exclusive Historical Sites included</li>
+                        <li><i class="fa-solid fa-plane w-6 text-gold"></i> <strong>Flight:</strong> Direct Saudi Airlines</li>
+                        <li><i class="fa-solid fa-utensils w-6 text-gold"></i> <strong>Food:</strong> Full Board (Buffet)</li>
+                        <li><i class="fa-solid fa-bus w-6 text-gold"></i> <strong>Transport:</strong> Luxury Private Bus</li>
+                        <li><i class="fa-solid fa-shirt w-6 text-gold"></i> <strong>Laundry:</strong> Included (Unlimited)</li>
+                    </ul>
+                    <button onclick="openModal()" class="mt-6 bg-gold text-white px-6 py-3 rounded-lg hover:bg-primary transition font-bold w-full">Book Now</button>
                 </div>
-                
-                 <!-- Deluxe Ramadhan -->
-                <div class="bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-2xl shadow-lg border-l-8 border-gold overflow-hidden">
-                    <div class="grid md:grid-cols-3">
-                        <div class="p-8 border-r border-gray-700 flex flex-col justify-center">
-                            <div class="inline-block bg-gold text-white text-xs font-bold px-2 py-1 rounded mb-2 w-max">LIMITED SEATS</div>
-                            <h3 class="font-heading text-2xl font-bold text-white">Ramadhan Package</h3>
-                            <p class="text-gold font-bold text-3xl mt-2">₹ 1,64,999</p>
-                            <p class="text-sm text-gray-400 mt-1">Full Month / Last 10 Days</p>
-                            <button onclick="openModal()" class="mt-6 bg-gold text-white px-6 py-3 rounded-lg hover:bg-yellow-700 transition font-bold w-full">Book Now</button>
-                        </div>
-                        <div class="p-8 md:col-span-2">
-                            <h4 class="font-bold text-lg mb-4 text-gold">Spiritual Highlights</h4>
-                            <div class="grid sm:grid-cols-2 gap-4 mb-4">
-                                <ul class="space-y-2 text-sm text-gray-300">
-                                    <li><i class="fa-solid fa-moon w-6 text-gold"></i> Spend Eid-ul-Fitr in Madina</li>
-                                    <li><i class="fa-solid fa-utensils w-6 text-gold"></i> Premium Iftar & Suhoor buffet</li>
-                                </ul>
-                                <ul class="space-y-2 text-sm text-gray-300">
-                                    <li><i class="fa-solid fa-mosque w-6 text-gold"></i> Itikaf arrangements available</li>
-                                    <li><i class="fa-solid fa-person-praying w-6 text-gold"></i> Special Qiyam-ul-Layl programs</li>
-                                </ul>
-                            </div>
-                             <p class="text-xs text-gray-400 italic">*Prices subject to change based on visa regulations during Ramadhan.</p>
-                        </div>
-                    </div>
+
+                <!-- Deluxe Ramadhan -->
+                <div class="bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl shadow-lg border-l-8 border border-gold p-6">
+                    <div class="inline-block bg-gold text-white text-xs font-bold px-2 py-1 rounded mb-2 w-max">LIMITED SEATS</div>
+                    <h3 class="font-heading text-3xl font-bold text-center text-white">Ramadhan Package</h3><br>
+                    <p class="text-gray-300 text-sm">Starts From: <span class="font-bold text-xl text-gold">₹ 1,99,999</span></p>
+                    <p class="text-sm text-gray-400 mt-1">Full Month / Last 10 Days</p>
+                    <br>
+                    <h4 class="font-bold text-lg mb-4 text-gold">Package Highlights</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><i class="fa-solid fa-moon w-6 text-gold"></i> Spend Eid-ul-Fitr in Madina</li>
+                        <li><i class="fa-solid fa-utensils w-6 text-gold"></i> Premium Iftar & Suhoor buffet</li>
+                        <li><i class="fa-solid fa-mosque w-6 text-gold"></i> Itikaf arrangements available</li>
+                        <li><i class="fa-solid fa-person-praying w-6 text-gold"></i> Special Qiyam-ul-Layl programs</li>
+                    </ul><br>
+                    <p class="text-xs text-gray-400 italic">*Prices subject to change based on visa regulations during Ramadhan.</p>
+                    <button onclick="openModal()" class="mt-6 bg-gold text-white px-6 py-3 rounded-lg hover:bg-white hover:text-primary transition font-bold w-full">Book Now</button>
                 </div>
             </div>
         </div>
@@ -230,49 +200,54 @@
         <div class="container mx-auto px-4">
              <div class="flex items-center gap-4 mb-8">
                 <div class="h-px bg-gray-300 flex-grow"></div>
-                <h2 class="font-heading text-3xl font-bold text-gray-800"><i class="fa-solid fa-star-half-stroke text-gray-500 mr-3"></i>Semi Deluxe Packages</h2>
+                <h2 class="font-heading text-3xl font-bold text-primary"><i class="fa-solid fa-star-half-stroke text-gray-500 mr-3"></i>Semi Deluxe Packages</h2>
                 <div class="h-px bg-gray-300 flex-grow"></div>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- 15 Days -->
-                <div class="bg-white border border-gray-200 rounded-xl hover:shadow-xl transition p-6 relative">
-                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-600 text-white px-4 py-1 rounded-full text-sm font-bold">Most Popular</div>
-                    <h3 class="font-heading text-xl font-bold text-center mt-4">15 Days Classic</h3>
-                    <p class="text-center text-primary text-2xl font-bold my-4">₹ 1,14,999</p>
-                    <ul class="space-y-3 text-sm text-gray-600 mb-6">
+                <!-- Semi Deluxe 21 Days -->
+                <div class="bg-white rounded-xl shadow-lg border-l-8 border border-silver p-6">
+                    <h3 class="font-heading text-2xl font-bold text-center text-gray-800">21 Days Semi Deluxe</h3>
+                    <ul class="mt-4 text-sm text-gray-700 space-y-2">
+                        <li>Starts From: <span class="font-bold text-silver text-xl">₹ 1,14,999</span></li>
+                        <li>Quint Sharing: <span class="font-bold text-silver text-xl">₹ 129,999</span></li>
+                        <li>Quad Sharing: <span class="font-bold text-silver text-xl">₹ 135,999</span></li>
+                        <li>3 Sharing: <span class="font-bold text-silver text-xl">₹ 141,999</span></li>
+                        <li>2 Sharing: <span class="font-bold text-silver text-xl">₹ 147,999</span></li><br>
                         <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>Hotel Distance: 400-600m</span></li>
                         <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>Indian Buffet Meals</span></li>
                         <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>Round Trip Transfers</span></li>
                         <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>Weekly Laundry</span></li>
-                    </ul>
-                    <button onclick="openModal()" class="w-full border-2 border-primary text-primary font-bold py-2 rounded-lg hover:bg-primary hover:text-white transition">Details & Booking</button>
+                    </ul><br>
+                    <button onclick="openModal()" class="w-full bg-silver text-white font-bold py-2 rounded-lg hover:bg-primary hover:text-white transition">Book Now</button>
                 </div>
 
-                <!-- 20 Days -->
-                <div class="bg-white border border-gray-200 rounded-xl hover:shadow-xl transition p-6">
-                    <h3 class="font-heading text-xl font-bold text-center mt-4">20 Days Extended</h3>
-                    <p class="text-center text-primary text-2xl font-bold my-4">₹ 1,23,999</p>
-                    <ul class="space-y-3 text-sm text-gray-600 mb-6">
-                        <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>10 Days Makkah / 10 Madina</span></li>
+                <!-- Semi Deluxe 28 Days -->
+                <div class="bg-white rounded-xl shadow-lg border-l-8 border border-silver p-6">
+                    <h3 class="font-heading text-2xl font-bold text-center text-gray-800">28 Days Semi Deluxe</h3>
+                    <ul class="mt-4 text-sm text-gray-700 space-y-2">
+                        <li>Starts From: <span class="font-bold text-silver text-xl">₹ 1,59,999</span></li><br>
+                        <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>14 Days Makkah / 14 Madina</span></li>
                         <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>Guided Ziyarat Tour</span></li>
-                        <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>Visa & Insurance Included</span></li>
+                        <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>Visa</span></li>
                         <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>AC Bus Transport</span></li>
-                    </ul>
-                    <button onclick="openModal('20 Days Semi Deluxe')" class="w-full border-2 border-primary text-primary font-bold py-2 rounded-lg hover:bg-primary hover:text-white transition">Details & Booking</button>
+                        <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>Food</span></li>
+                    </ul><br><br><br><br>
+                    <button onclick="openModal()" class="w-full bg-silver text-white font-bold py-2 rounded-lg hover:bg-primary hover:text-white transition">Book Now</button>
                 </div>
 
-                <!-- Ramadhan Semi -->
-                <div class="bg-white border border-gray-200 rounded-xl hover:shadow-xl transition p-6">
-                    <h3 class="font-heading text-xl font-bold text-center mt-4">Ramadhan Semi</h3>
-                    <p class="text-center text-primary text-2xl font-bold my-4">₹ 1,44,999</p>
-                    <ul class="space-y-3 text-sm text-gray-600 mb-6">
+                <!-- Semi Deluxe Ramadhan -->
+                <div class="bg-white rounded-xl shadow-lg border-l-8 border-silver p-6">
+                    <h3 class="font-heading text-2xl font-bold text-center text-gray-800">Ramadhan Semi Deluxe</h3>
+                    <ul class="mt-4 text-sm text-gray-700 space-y-2">
+                        <li>Starts From: <span class="font-bold text-silver text-xl">₹ 1,49,999</span></li><br>
                         <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>Economic Hotels (800m)</span></li>
                         <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>Suhoor & Iftar Packs</span></li>
                         <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>Group Leaders Available</span></li>
                         <li class="flex"><i class="fa-solid fa-check text-green-500 w-6 mt-1"></i> <span>Connecting Flights</span></li>
-                    </ul>
-                    <button onclick="openModal()" class="w-full border-2 border-primary text-primary font-bold py-2 rounded-lg hover:bg-primary hover:text-white transition">Details & Booking</button>
+                    </ul><br><br><br><br>
+                    <p class="text-xs text-gray-400 italic">*Prices subject to change based on visa regulations during Ramadhan.</p><br>
+                    <button onclick="openModal()" class="w-full bg-silver text-white font-bold py-2 rounded-lg hover:bg-primary hover:text-white transition">Book Now</button>
                 </div>
             </div>
         </div>
@@ -283,36 +258,36 @@
         <div class="container mx-auto px-4">
              <div class="flex items-center gap-4 mb-8">
                 <div class="h-px bg-green-600 flex-grow"></div>
-                <h2 class="font-heading text-3xl font-bold text-gray-800"><i class="fa-solid fa-piggy-bank text-green-600 mr-3"></i>Super Saver Packages</h2>
+                <h2 class="font-heading text-3xl font-bold text-primary"><i class="fa-solid fa-sack-dollar text-green-600 mr-3"></i>Super Saver Packages</h2>
                 <div class="h-px bg-green-600 flex-grow"></div>
             </div>
 
             <div class="bg-white rounded-xl shadow p-8">
                 <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Designed for those on a strict budget who do not mind a little extra travel time to the Haram. We ensure clean accommodation and reliable transport.</p>
                 
-                <div class="grid md:grid-cols-2 gap-8 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+                <div class="grid md:grid-cols-2 gap-8">
                     <!-- 12 Days -->
-                    <div class="p-4 text-center">
-                        <h3 class="font-bold text-xl mb-2">12 Days Economy</h3>
-                        <p class="text-3xl font-bold text-primary mb-4">₹ 99,999</p>
+                    <div class="p-4 text-center border border-green-600 rounded-lg">
+                        <h3 class="font-heading text-3xl font-bold text-gray-800">12 Days Economy</h3>
+                        <p class="text-2xl font-bold text-green-700 mb-4">₹ 99,999</p>
                         <div class="text-left inline-block">
                             <p class="text-sm text-gray-600 mb-2"><strong>Hotel:</strong> 1.5km - 2km (24/7 Shuttle Available)</p>
                             <p class="text-sm text-gray-600 mb-2"><strong>Food:</strong> Set Menu (3 meals)</p>
                             <p class="text-sm text-gray-600 mb-4"><strong>Flights:</strong> Via Flights (1 stop)</p>
                         </div>
-                        <button onclick="openModal()" class="block w-full bg-primary text-white font-bold py-2 rounded hover:bg-green-800 transition">Select Package</button>
+                        <button onclick="openModal()" class="block w-full bg-green-700 text-white font-bold py-2 rounded hover:bg-primary transition">Select Package</button>
                     </div>
 
                     <!-- 15 Days -->
-                    <div class="p-4 text-center">
-                        <h3 class="font-bold text-xl mb-2">15 Days Economy Plus</h3>
-                        <p class="text-3xl font-bold text-primary mb-4">₹ 1,04,999</p>
+                    <div class="p-4 text-center border border-green-600 rounded-lg">
+                        <h3 class="font-heading text-3xl font-bold text-gray-800">15 Days Economy Plus</h3>
+                        <p class="text-2xl font-bold text-green-700 mb-4">₹ 1,04,999</p>
                         <div class="text-left inline-block">
                             <p class="text-sm text-gray-600 mb-2"><strong>Hotel:</strong> 1.2km (Shuttle Available)</p>
                             <p class="text-sm text-gray-600 mb-2"><strong>Food:</strong> Buffet Catering</p>
                             <p class="text-sm text-gray-600 mb-4"><strong>Duration:</strong> 7 Days Makkah / 8 Madina</p>
                         </div>
-                        <button onclick="openModal()" class="block w-full bg-primary text-white font-bold py-2 rounded hover:bg-green-800 transition">Select Package</button>
+                        <button onclick="openModal()" class="block w-full bg-green-700 text-white font-bold py-2 rounded hover:bg-primary transition">Select Package</button>
                     </div>
                 </div>
             </div>
